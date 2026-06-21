@@ -163,11 +163,11 @@ function ProductPage() {
         <div className="mt-4">
           <p className="text-xs text-gray-400 line-through">R$ 910</p>
           <p className="text-2xl font-light text-gray-900">
-            R$ 150<sup className="text-sm">00</sup>
+            R$ 250<sup className="text-sm">00</sup>
             <span className="ml-2 text-sm text-[#00a650]">83% OFF no Pix</span>
           </p>
           <p className="mt-1 text-sm text-gray-700">
-            ou R$ 150 em <span className="text-[#00a650]">10x R$ 15,00 sem juros</span>
+            ou R$ 250 em <span className="text-[#00a650]">10x R$ 25,00 sem juros</span>
           </p>
           <button onClick={() => notify("Meios de pagamento")} className="mt-1 text-sm text-[#3483fa]">Ver meios de pagamento e promoções</button>
         </div>
