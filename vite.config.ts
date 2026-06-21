@@ -7,10 +7,31 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  nitro: {
-    preset: "netlify",
+  vite: {
+    base: "./",
+    environments: {
+      client: {
+        build: {
+          outDir: "dist",
+        },
+      },
+      ssr: {
+        build: {
+          outDir: "dist/server",
+        },
+      },
+    },
   },
+  nitro: false,
   tanstackStart: {
+    prerender: {
+      enabled: true,
+      failOnError: true,
+      autoStaticPathsDiscovery: true,
+    },
+    sitemap: {
+      enabled: false,
+    },
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
