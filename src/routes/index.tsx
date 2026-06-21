@@ -38,7 +38,7 @@ import img5 from "@/assets/philco-5.png";
 const gallery = [img1, img2, img3, img4, img5];
 
 // Altere este link para o endereço de checkout desejado
-const CHECKOUT_URL = "https://app.abacash.com/checkout/caixa-de-som-philco";
+const CHECKOUT_URL = "https://go.tribopay.com.br/xweldxpqoy";
 
 const redirectToCheckout = () => {
   window.location.href = CHECKOUT_URL;
