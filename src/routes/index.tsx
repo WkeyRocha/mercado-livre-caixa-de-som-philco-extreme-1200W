@@ -65,7 +65,7 @@ function ProductPage() {
     <div className="min-h-screen bg-[#ededed] text-[#333]">
       <Toaster position="top-center" />
       {/* Header */}
-      <header className="bg-[#fff159]">
+      <header className="bg-[#FFE600]">
         <div className="flex items-center gap-3 px-3 py-3 w-full justify-between">
           <img src={mlLogo} alt="Mercado Livre" className="h-16 object-contain" />
           <div className="flex items-center gap-3">
